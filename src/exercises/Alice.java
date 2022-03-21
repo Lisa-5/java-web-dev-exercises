@@ -26,7 +26,5 @@ public class Alice {
         } else {
             System.out.println("The quote does not contain: " + searchTerm.trim());
         }
-
-
     }
 }
