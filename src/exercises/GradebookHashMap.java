@@ -22,8 +22,6 @@ public class GradebookHashMap {
                 System.out.print("Student name: ");
                 String newStudentName = input.nextLine();
                 students.put(newStudentId, newStudentName);
-
-                input.nextLine();
             }
         } while(!newStudentId.equals(""));
 
@@ -32,7 +30,7 @@ public class GradebookHashMap {
         System.out.println("\nClass roster: ");
 
         for(Map.Entry<String, String> student : students.entrySet()) {
-            System.out.println(student.getKey() + " (" + student.getValue() + ")");
+            System.out.println(student.getKey() + ", " + student.getValue());
         }
     }
 }
