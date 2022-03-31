@@ -11,7 +11,7 @@ public class CountingCharacters {
                 "you move all the terms over to one side, you can put the quadratics into a" +
                 " form that can be factored allowing that side of the equation to equal zero." +
                 " Once you’ve done that, it’s pretty straightforward from there.";
-        /* string = string.replaceAll(",", "").replaceAll("\\.", "").replaceAll("'", "").replaceAll(" ", ""); */
+        string = string.replaceAll("[^A-Za-z]", "");
         char[] stringToSearch = string.toCharArray();
 
 

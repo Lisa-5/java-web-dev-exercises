@@ -1,6 +1,5 @@
 package org.launchcode.java.studios.countingcharacters;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
