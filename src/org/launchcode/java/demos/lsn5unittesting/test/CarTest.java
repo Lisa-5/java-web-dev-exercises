@@ -17,16 +17,17 @@ public class CarTest {
             test_car = new Car("Toyota", "Prius", 10, 50);
         }
 
-        @Test
-        public void emptyTest() {
-            assertEquals(10,10,.001);
-        }
+//        @Test
+//        public void emptyTest() {
+//            assertEquals(10,10,.001);
+//        }
 
     //TODO: constructor sets gasTankLevel properly
         @Test
         public void testInitialGasTank() {
-            //assertEquals(10, test_car.getGasTankLevel(), .001);
-            //assertNotEquals(0, test_car.getGasTankLevel(), 0.0);
+            assertEquals(10, test_car.getGasTankLevel(), .001);
+            assertNotEquals(0, test_car.getGasTankLevel(), 0.0);
+            assertFalse(0 == test_car.getGasTankLevel());
             assertTrue(10 == test_car.getGasTankLevel());
         }
 
