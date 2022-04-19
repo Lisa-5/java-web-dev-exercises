@@ -9,13 +9,29 @@ public class HouseCat extends Cat {
         name = aName;
     }
 
+    public HouseCat(double weight){
+        super(weight);
+    }
+
+    public HouseCat(String aName){
+        name = aName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public boolean isSatisfied() {
         return !isHungry() && !isTired();
     }
 
     @Override
     public String noise() {
-        return "Hello, my name is " + name + "!";
+        if (isSatisfied()){
+            return "Hello, my name is " + name + "!";
+        } else {
+            return "Meoooooowwww";
+        }
     }
 
     public String purr() {
