@@ -30,7 +30,7 @@ public class HouseCat extends Cat {
         if (isSatisfied()){
             return "Hello, my name is " + name + "!";
         } else {
-            return "Meoooooowwww";
+            return "Meeoooooowwww";
         }
     }
 

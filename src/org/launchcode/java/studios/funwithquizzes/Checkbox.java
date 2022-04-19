@@ -8,7 +8,8 @@ public class Checkbox extends Question{
 
     @Override
     public String toString() {
-
-
+        return null;
     }
+
+
 }
