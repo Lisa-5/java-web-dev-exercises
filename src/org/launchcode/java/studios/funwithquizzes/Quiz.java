@@ -5,20 +5,47 @@ import java.util.Scanner;
 
 public class Quiz {
 
-     Question [] questions = {
-            new MultipleChoice("What color are apples?" + "\n(a) red/green\n(b)Orange\n(c)Magenta\n", "a"),
-            new MultipleChoice( "What color are bananas?" + "\n(a)red/green\n(b)Yellow\n(c)Blue\n", "b" ),
-            new TrueFalse("The earth is flat?", "FALSE")
-    };
+    private ArrayList<Question> questions = new ArrayList<>();
 
-    public static void takeTest(Question[] questions) {
+    public Quiz(){
+        Question q1 = new MultipleChoice("""
+                What color are apples?
+                (a) red/green
+                (b) Orange
+                (c) Magenta
+                """, "a");
+        Question q2 = new MultipleChoice("""
+                What color are bananas?
+                (a) red/green
+                (b) Yellow
+                (c) Blue
+                """, "b" );
+        Question q3 = new TrueFalse("Is the earth is flat?" + "\nTrue OR False", "False");
+//        Question q4 = new Checkbox("""
+//                Choose all animals with spots.
+//                (a) leopards
+//                (b) lady bugs
+//                (c) polar bears""" , "a", "b");
+
+        questions.add(q1);
+        questions.add(q2);
+        questions.add(q3);
+        //questions.add(q4);
+    }
+
+
+    public static void takeTest(ArrayList<Question> questions) {
         int score = 0;
         Scanner keyboardInput = new Scanner(System.in);
 
         for (Question question : questions) {
-            System.out.println(questions);
+            System.out.println(question.getPrompt());
+            String answer = keyboardInput.nextLine();
+            if(answer.equals(question.getAnswer())){
+                score++;
+            }
         }
-        
+        System.out.println("You got " + score + "out of " + questions.size());
 
     }
 }

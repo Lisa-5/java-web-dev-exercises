@@ -26,18 +26,5 @@ public abstract class Question {
         this.answer = answer;
     }
 
-    //    public Question(String question) {
-//        this.question = question;
-//    }
-//
-//    public String getQuestion() {
-//        return question;
-//    }
-//
-//    public void setQuestion(String question) {
-//        this.question = question;
-//    }
-//
-//    @Override
-//    public abstract String toString();
+    // abstract String toString();
 }
