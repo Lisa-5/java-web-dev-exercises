@@ -2,20 +2,42 @@ package org.launchcode.java.studios.funwithquizzes;
 
 public abstract class Question {
 
-    private String question;
+    private String prompt;
+    private String answer;
 
-    public Question(String question) {
-        this.question = question;
+    public Question(String prompt, String answer){
+        this.prompt = prompt;
+        this.answer = answer;
     }
 
-    public String getQuestion() {
-        return question;
+    public String getPrompt() {
+        return prompt;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
+    public void setPrompt(String prompt) {
+        this.prompt = prompt;
     }
 
-    @Override
-    public abstract String toString();
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
+    //    public Question(String question) {
+//        this.question = question;
+//    }
+//
+//    public String getQuestion() {
+//        return question;
+//    }
+//
+//    public void setQuestion(String question) {
+//        this.question = question;
+//    }
+//
+//    @Override
+//    public abstract String toString();
 }

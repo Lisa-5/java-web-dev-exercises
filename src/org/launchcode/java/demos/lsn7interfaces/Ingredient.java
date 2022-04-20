@@ -7,6 +7,7 @@ public abstract class Ingredient {
     private double cost;
     private ArrayList<String> allergens;
 
+
     public Ingredient(String aName, double aCost, ArrayList<String> someAllergens){
         name = aName;
         cost = aCost;
@@ -43,4 +44,5 @@ public abstract class Ingredient {
                 "Cost: $" + cost + "\n" +
                 "Allergens: " + allergens + "\n";
     }
+
 }

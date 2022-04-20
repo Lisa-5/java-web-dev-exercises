@@ -5,18 +5,20 @@ import java.util.Scanner;
 
 public class Quiz {
 
-    ArrayList<Question> questions = new ArrayList<>();
-    public static String getUserInput(boolean upper){
-        Scanner input = new Scanner(System.in);
-        String output = input.nextLine();
+     Question [] questions = {
+            new MultipleChoice("What color are apples?" + "\n(a) red/green\n(b)Orange\n(c)Magenta\n", "a"),
+            new MultipleChoice( "What color are bananas?" + "\n(a)red/green\n(b)Yellow\n(c)Blue\n", "b" ),
+            new TrueFalse("The earth is flat?", "FALSE")
+    };
 
-        if(upper){
-            output = output.toUpperCase();
+    public static void takeTest(Question[] questions) {
+        int score = 0;
+        Scanner keyboardInput = new Scanner(System.in);
+
+        for (Question question : questions) {
+            System.out.println(questions);
         }
-        return output;
-    }
+        
 
-    public void addQuestion(Question aQuestion){
-        questions.add(aQuestion);
     }
 }
