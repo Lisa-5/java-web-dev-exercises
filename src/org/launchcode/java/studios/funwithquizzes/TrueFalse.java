@@ -6,8 +6,5 @@ public class TrueFalse extends Question{
         super(prompt, answer);
     }
 
-
-
-
 }
 

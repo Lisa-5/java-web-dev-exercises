@@ -23,22 +23,23 @@ public class Main {
 
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
 
-//        System.out.println("\n*** *** ***\n");
-//        System.out.println("Flavors");
-//        for ( Flavor flavor : flavors) {
-//            System.out.println(flavor.getName());
-//        }
+        System.out.println("\n*** *** ***\n");
+        System.out.println("Flavors");
+        for ( Flavor flavor : flavors) {
+            System.out.println(flavor.getName());
+        }
 
         System.out.println("\n*** *** ***\n");
         System.out.println("Allergens");
-//        String allergenList = "";
+        String allergenList = "";
 //        for(int i = 0; i < flavors.size(); i++){
-//            flavors.
+//            String allergen = flavors.get(i).getAllergens()
 //        }
 
         for ( Flavor flavor : flavors) {
 
-            System.out.println(flavor.getName() + ": " + flavor.getAllergens());
+           //System.out.println(flavor.getName() + ": " + flavor.getAllergens());
+            System.out.println(flavor.toString());
         }
 
         System.out.println("\n*** *** ***\n");

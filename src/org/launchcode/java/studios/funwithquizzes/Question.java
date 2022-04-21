@@ -26,5 +26,5 @@ public abstract class Question {
         this.answer = answer;
     }
 
-    // abstract String toString();
+     public String toString(){return this.prompt;}
 }

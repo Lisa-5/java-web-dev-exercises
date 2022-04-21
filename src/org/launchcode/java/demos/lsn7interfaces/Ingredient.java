@@ -42,7 +42,7 @@ public abstract class Ingredient {
     public String toString() {
         return "Name: " + name + "\n" +
                 "Cost: $" + cost + "\n" +
-                "Allergens: " + allergens + "\n";
+                "Allergens: " + String.join(", ", allergens) + "\n";
     }
 
 }
