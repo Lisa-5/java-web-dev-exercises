@@ -9,9 +9,9 @@ public class Quiz {
 
     public Quiz(){}
 
-    public void addNewQuestion(Question question){
-        this.questions.add(question);
-    }
+        public void addNewQuestion(Question question){
+            this.questions.add(question);
+        }
 
     public void takeTest() {
         int score = 0;
@@ -20,11 +20,11 @@ public class Quiz {
         for (Question question : this.questions) {
             System.out.println(question.getPrompt());
             String answer = keyboardInput.nextLine();
-            if(answer.equals(question.getAnswer())){
+            if(answer.trim().equalsIgnoreCase(question.getAnswer())){
                 score++;
             }
         }
-        System.out.println("You got " + score + "out of " + questions.size());
+        System.out.println("You got " + score + " out of " + questions.size());
 
     }
 }

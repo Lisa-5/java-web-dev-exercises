@@ -34,7 +34,7 @@ public class QuizRunner {
         quiz2.addNewQuestion(q1);
         quiz2.addNewQuestion(q3);
 
-        quiz1.takeTest();
+        //quiz1.takeTest();
         quiz2.takeTest();
 
 
